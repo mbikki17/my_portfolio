@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghana Bikki's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        #profile-pic {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+        .section--page {
+            padding: 20px;
+        }
+        .card--skills, .card--work-history, .card--project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .card--work-history ul, .card--work-history p {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .line-break {
+            border-bottom: 2px solid #ddd;
+            margin: 20px 0;
+        }
+        #socials--list a {
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container--main">
+        <section id="wrapper--hero" class="section--page text-center">
+            <img id="profile-pic" src="./assests/images/profilepicc.png" alt="Profile Picture">
+            <h1 id="user-name">Meghana Bikki</h1>
+            <p id="bio">I'm up for the chance to put the skills I have to work to enhance them.</p>
+            <p id="email">✉ bikki.meg@gmail.com</p>
+            <p id="phone">📞(+91) 8618846164</p>
+        </section>
+
+        <section class="section--page text-center">
+            <div id="socials--list">
+                <a href="https://www.linkedin.com/in/meghanabikki17/" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+                <a href="https://github.com/mbikki17" target="_blank" class="btn btn-outline-dark">GitHub</a>
+                <a href="./assests/myresume.pdf" class="btn btn-outline-secondary">Download Resume</a>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <h2>Skills</h2>
+            <div id="wrapper--skills__items">
+                <div class="card--skills"><span>C-Language [Beginner Level]</span></div>
+                <div class="card--skills"><span>Written & Spoken Communication</span></div>
+                <div class="card--skills"><span>Rapport Building</span></div>
+                <div class="card--skills"><span>Team Management</span></div>
+                <div class="card--skills"><span>Adaptable & Flexible</span></div>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <h2>Projects</h2>
+            <div class="card--project">
+                <a href="project1.html"><span>➤</span> SMART HEALTHCARE MONITORING SYSTEM USING IoT</a>
+            </div>
+            <div class="card--project">
+                <a href="project2.html"><span>➤</span> CMOS NAND DESIGN & IMPLEMENTATION USING VIRTUOSO CADENCE TOOL</a>
+            </div>
+            <div class="card--project">
+                <a href="project3.html"><span>➤</span> MEMORY DESIGN OF RAM IN ARTIX-7 FPGA KIT</a>
+            </div>
+        </section>
+
+        
+        <section id="work-history-wrapper" class="section--page">
+            <h2>Work Experience</h2>
+            <div class="line-break"></div>
+            <div class="card--work-history">
+                <strong>SDP Trainee | GITAM DEEMED TO BE UNIVERSITY BLR | 15th May to 28th June</strong>
+            <p>Summer Development Program 2024 was a 6-week program that was divided into 3 sprints, It is an internship program initiated by GITAM EECE Department to remove the gap between academia and industrial skills. This helped me accquire new skills and sharpen the pre-accquired skills.</p>
+                <ul>
+                    <li>Sprint One: Included teaching us industry specific skills like resume writing, LinkedIn profile optimisation, Git & Github, PCB and Agile Methodology.</li>
+                    <li>Sprint Two: It was for domain specific project, my domain was VLSI & Comm. we understood how communication and VLSI are interconnected, understood different tools in VLSI and worked on the project with help of FPGA.</li>
+                    <li>Sprint Three: This was additional time given to complete all the assigned tasks, reports and work on industry specific skills.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <h2>Certifications</h2>
+            <div class="card--project">
+                <a href="https://www.coursera.org/account/accomplishments/verify/NJ6S8CP8LTC8"><span>➤</span> ENGLISH FOR CAREER DEVELOPMENT</a>
+            </div>
+        </section>
+
+        <section id="workshops-wrapper" class="section--page">
+            <h2>Workshops Attended</h2>
+            <div class="line-break"></div>
+            <div class="card--workshop">
+                <p>➤ CMOS DIGITAL IC DESIGN WORKSHOP</p>
+                <ul>
+                    <li>Ms. Neha Maheshwari from IIT Indore was the resource person for this workshop.</li>
+                    <li>Provided introduction to VLSI frontend and backend processes, helped us get familiar with CADENCE VIRTUOSO TOOL.</li>
+                    <li>Designed and simulated NMOS Invertor and CMOS invertor in cadence, observed the characteristics using plots.</li>
+                </ul>
+            </div>
+            <div class="card--workshop">
+                <p>➤ PCB WORKSHOP</p>
+                <ul>
+                    <li>Dr. Arvind Kumar & Dr. Girish Shankar Mishra were the trainers for this workshop.</li>
+                    <li>Started with the basics of PCB, Circuit Designing, Tinkercad & Easyeda.</li>
+                    <li>Designed few circuits first in Tinkercad then implemented it in Easyeda and then exported it as Gerber files.</li>
+                </ul>
+            </div>
+            <div class="card--workshop">
+                <p>➤ WORKSHOP ON AGILE METHODOLOGY</p>
+                <ul>
+                    <li>Anurag Kumar & Priyadarshini Kabaka were the trainers for this workshop.</li>
+                    <li>Started with an ice-breaker which was made to make us familiar with our fellow attendees which then continued with few interactive games that were directly linked with theoretical concepts.</li> 
+                    <li>Learnt about agile methodology to complete a project, time evaluation, sprint meetings, kanban etc.</li>     
+                </ul>
+            </div>
+        </section>
+        
+        <section id="extra-curriculars-wrapper" class="section--page">
+            <h2>Extra-Curriculars</h2>
+            <div class="line-break"></div>
+            <div class="card--extra-curricular">
+                <p>➤ Vice-Chairperson IEEE Student Branch GITAM BLR | Feb 2023 - Feb 2024</p>
+                <ul>
+                    <li>Acquired skills like Team Management, Rapport Building, Communication & Event Planning.</li>
+                    <li>Held general meetings, helped organize events, seminars, and workshops.</li>
+                </ul>
+            </div>
+            <div class="card--extra-curricular">
+                <p>➤ Volunteered at 28-hour Smart Gitam Hackathon</p>
+                <ul>
+                    <li>Used skills such as communication, rapport building to help out the participants.</li>
+                </ul>
+            </div>
+            <div class="card--extra-curricular">
+                <p>➤ Participated in Internal SIH 2023 held by GITAM Bengaluru Campus</p>
+                <ul>
+                    <li>Worked on the problem statement related to Port Surveillance and Encroachment, used UAV for addressing this issue.</li>
+                    <li>Utilized skills such as Domain knowledge, MATLAB Simulink and Teamwork, our team got shortlisted to participate in SIH 2023.</li>
+                </ul>
+            </div>
+            <div class="card--extra-curricular">
+                <p>➤ Team Member of SAEINDIA REEV 2024 GITAM BLR</p>
+                <ul>
+                    <li>Utilized skills such as Domain Knowledge, MATLAB Simulation & Simulink, Teamwork. I was a member of the team up until REEV VIRTUALS 2023-2024 which was held by TVS IQL.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <style>
+            /* Additional styles for better separation */
+            .card--workshop, .card--extra-curricular {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 15px;
+                margin-bottom: 10px;
+            }
+            .card--workshop p, .card--extra-curricular p {
+                font-weight: bold;
+                margin: 0 0 5px 0;
+            }
+            .card--workshop ul, .card--extra-curricular ul {
+                margin: 0;
+                padding-left: 20px;
+            }
+        </style>
+        
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
