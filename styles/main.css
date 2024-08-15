@@ -9,11 +9,12 @@
     --sectionBgColor: #fafafa; /* Very light gray background for sections */
     --highlightColor: #fcfcfc; /* Very light gray for highlighting */
     --headingColor: #996699; /* Medium lilac for headings */
+    --cardBgColor: #fff; /* White background for cards */
 }
 
 * {
-    font-family: Cambria, serif;
-    line-height: 1.5em;
+    font-family: Cambria, serif; /* Changed to Cambria */
+    line-height: 1.6em; /* Slightly increased line height for better readability */
     box-sizing: border-box;
     color: var(--mainTextColor);
 }
@@ -26,7 +27,7 @@ body {
 
 p, span, li {
     color: var(--secondaryTextColor);
-    font-size: 1em;
+    font-size: 1.1em; /* Increased font size for paragraphs and spans */
 }
 
 a {
@@ -41,32 +42,26 @@ li {
 }
 
 #container--main {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em;
 }
 
 .section--page {
-    padding: 1em;
+    padding: 2em;
     background-color: var(--sectionBgColor);
-    border-radius: 8px;
+    border-radius: 12px; /* Increased border-radius */
     margin-bottom: 2em;
-    box-shadow: 0 2px 4px var(--highlightColor);
+    box-shadow: 0 6px 12px var(--highlightColor); /* Increased box shadow */
 }
 
-/* Adjust heading alignment to center */
 .section--page h2 {
     text-align: center;
     color: var(--headingColor);
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em; /* Increased font size for section headings */
 }
 
-/* Adjust content alignment to slightly left-aligned */
-.section--page:not(:nth-child(4)) {
-    text-align: left;
-}
-
-/* Hero Section */
 #wrapper--hero {
     display: flex;
     align-items: center;
@@ -75,146 +70,128 @@ li {
     gap: 1em;
 }
 
-#bio, a {
-    font-weight: 300;
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px var(--highlightColor); /* Increased box shadow */
 }
 
 #user-name {
-    font-size: 48px;
-    line-height: 1em;
+    font-size: 3em; /* Increased font size for user name */
+    line-height: 1.2em;
     font-weight: 600;
-    color: var(--mainTextColor);
 }
 
-#profile-pic {
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px var(--highlightColor);
-}
-
-#email {
-    color: var(--mainTextColor);
+#email, #phone {
+    font-size: 1.3em; /* Increased font size for contact details */
+    font-weight: 400;
 }
 
 #socials--list {
     display: flex;
     justify-content: center;
-    column-gap: 2em; /* Increased gap between social links */
+    gap: 1em;
     flex-wrap: wrap;
 }
 
 #socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
-    font-size: 0.9em;
-    transition: font-weight 0.3s ease, color 0.3s ease;
+    font-size: 1.1em; /* Increased font size for social links */
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: font-weight 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 #socials--list a:hover {
-    font-weight: 100;
+    font-weight: 400;
     color: var(--mainLinkColor);
+    background-color: var(--highlightColor);
 }
 
-/* Certifications Section */
-#certifications-wrapper {
-    padding: 1em;
-}
-
-.certification {
+.card--skills, .card--project, .card--work-history, .card--extra-curricular {
+    background-color: var(--cardBgColor);
+    border-radius: 8px;
+    padding: 1.2em; /* Slightly increased padding */
+    box-shadow: 0 4px 8px var(--highlightColor); /* Increased box shadow */
     margin: 0.5em 0;
-    padding: 0.5em; /* Adjusted padding */
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-    border-radius: 8px; /* Rounded border corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-}
-
-.certification a {
-    display: block;
-    transition: color 0.3s ease;
-}
-
-.certification a:hover {
-    color: var(--mainLinkColor);
-}
-
-/* Workshops Section */
-.card--work-history {
-    margin-top: 1em;
-    padding: 1em;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-    border-radius: 5px; /* Smaller border radius */
-    border: 1px solid var(--mainBorderColor);
-}
-
-.card--work-history p {
-    margin: 0.5em 0;
-    font-weight: 500;
-}
-
-/* Extra-Curriculars Section */
-#extra-curriculars-wrapper .card--work-history {
-    margin-top: 1em;
-    padding: 1em;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-    border-radius: 5px; /* Smaller border radius */
-    border: 1px solid var(--mainBorderColor);
-}
-
-#extra-curriculars-wrapper .card--work-history p {
-    margin: 0.5em 0;
-    font-weight: 500;
-}
-
-.line-break {
-    background-color: var(--mainBorderColor);
-    height: 1px;
-    margin: 1em 0;
-}
-
-/* Skills Section */
-#wrapper--skills__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em; /* Small gap between skill boxes */
 }
 
 .card--skills {
-    background-color: var(--highlightColor);
-    border-radius: 8px;
-    padding: 0.5em 1em;
-    font-size: 0.9em;
-    box-shadow: 0 2px 4px var(--highlightColor);
+    display: inline-block;
+    font-size: 1em; /* Increased font size for skills */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card--skills:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px var(--highlightColor);
+    box-shadow: 0 6px 12px var(--highlightColor); /* Increased box shadow */
 }
 
-@media (max-width: 600px) {
-    .section--page {
-        padding: 1em;
-    }
+.card--project a {
+    display: block;
+    font-weight: 500;
+    color: var(--mainTextColor);
+    font-size: 1.1em; /* Increased font size for project links */
+    transition: color 0.3s ease;
+}
 
+.card--project a:hover {
+    color: var(--mainLinkColor);
+}
+
+.card--work-history ul, .card--extra-curricular ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+.card--work-history p, .card--extra-curricular p {
+    margin: 0.5em 0;
+    font-size: 1.1em; /* Increased font size for work history and extra-curricular text */
+    font-weight: 500;
+}
+
+.line-break {
+    background-color: var(--mainBorderColor);
+    height: 2px; /* Increased line height */
+    margin: 1.5em 0; /* Increased margin */
+}
+
+@media (max-width: 768px) {
     #wrapper--hero {
         gap: 1em;
         flex-direction: column;
     }
 
     #profile-pic {
-        width: 250px; /* Adjusted for larger view on smaller screens */
-        height: 250px; /* Adjusted for larger view on smaller screens */
+        width: 150px;
+        height: 150px;
     }
 
-    .card--work-history {
-        border-left: none;
-        padding-left: 0;
+    #socials--list {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .section--page {
+        padding: 1em;
     }
 
-    #wrapper--skills__items {
-        justify-content: center;
+    #wrapper--hero {
+        gap: 0.5em;
+    }
+
+    #profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    #socials--list a {
+        font-size: 0.9em; /* Slightly smaller font size for smaller screens */
+        padding: 0.4em 0.8em;
     }
 }
